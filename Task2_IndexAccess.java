@@ -1,5 +1,5 @@
 
-public class fruits {
+public class Task2_IndexAccess {
     public static void main(String[] args) {
         // 1. Declare and initialize an array
         String[] fruits = {"Apple", "Banana", "Cherry", "Mango"};
