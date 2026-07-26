@@ -1,0 +1,20 @@
+public class Task7_DigitSum {
+    public static void main(String[] args) {
+        int number = 123456;
+
+        // Sum of even digits
+        int evenSum = String.valueOf(number).chars()
+                .map(Character::getNumericValue)
+                .filter(digit -> digit % 2 == 0)
+                .sum();
+
+        // Sum of odd digits
+        int oddSum = String.valueOf(number).chars()
+                .map(Character::getNumericValue)
+                .filter(digit -> digit % 2 != 0)
+                .sum();
+
+        System.out.println("Even digits sum: " + evenSum);
+        System.out.println("Odd digits sum: " + oddSum);
+    }
+}
